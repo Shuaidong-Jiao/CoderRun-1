@@ -97,43 +97,58 @@
 		android:layout_above="@+id/button_run"
 		android:layout_centerHorizontal="true">
 
-		<TextView
+		<Chronometer
+			android:text="计时器"
+			android:id="@+id/chronometer1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="New Text"
 			android:textColor="@color/app_green_dark"
-			android:id="@+id/distance_value"
+			android:textSize="20sp"
 			android:layout_alignParentTop="true"
 			android:layout_alignParentStart="true"/>
-
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="New Text"
+			android:text="距离："
 			android:id="@+id/distance_units"
+			android:textSize="20sp"
 			android:textColor="@color/app_green_dark"
-			android:layout_alignParentTop="true"
-			android:layout_toEndOf="@+id/distance_value"/>
-
+			android:layout_below="@+id/chronometer1"
+			android:layout_marginTop="28dp"/>
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="New Text"
-			android:id="@+id/speed_value"
+			android:text="0.00米"
+			android:textSize="20sp"
 			android:textColor="@color/app_green_dark"
-			android:layout_below="@+id/distance_value"
-			android:layout_alignParentStart="true"
+			android:id="@+id/distance_value"
+			android:layout_below="@+id/chronometer1"
+			android:layout_toRightOf="@+id/distance_units"
 			android:layout_marginTop="28dp"/>
 
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="New Text"
+			android:text="速度："
+			android:textSize="20sp"
 			android:id="@+id/speed_units"
 			android:textColor="@color/app_green_dark"
+			android:layout_below="@+id/distance_units"
+			android:layout_marginTop="28dp"/>
 
-			android:layout_alignTop="@+id/speed_value"
-			android:layout_toEndOf="@+id/speed_value"/>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0.0米/s"
+			android:textSize="20sp"
+			android:id="@+id/speed_value"
+			android:textColor="@color/app_green_dark"
+			android:layout_below="@+id/distance_units"
+			android:layout_toEndOf="@+id/speed_units"
+			android:layout_toRightOf="@+id/speed_units"
+			android:layout_marginTop="28dp"/>
+
+
 
 		<TextView
 			android:layout_width="wrap_content"

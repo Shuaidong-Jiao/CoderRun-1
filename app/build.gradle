@@ -11,8 +11,8 @@ android {
 
 	defaultConfig {
 		applicationId "cn.edu.fudan.cs12.coderrun"
-		minSdkVersion 19
-		targetSdkVersion 23
+		minSdkVersion 15
+		targetSdkVersion 18
 		versionCode 1
 		versionName "1.0"
 	}
